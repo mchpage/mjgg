@@ -8,11 +8,36 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #f5f5f5;
+  color: #ffffff;
+  background-color: #1a1a1a;
 }
 
-/* 테이블 스타일링 */
+/* 랭킹 테이블 배경색 스타일 */
+.bg-yellow-50 {
+  background-color: #2a2417 !important;
+}
+
+.hover\:bg-yellow-100:hover {
+  background-color: #3d3024 !important;
+}
+
+.hover\:bg-gray-50:hover {
+  background-color: #3a3a3a !important;
+}
+
+/* 테이블 컬럼 폭 설정 */
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-2\/5 {
+  width: 40%;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -63,7 +88,7 @@ body {
 }
 
 .bg-white {
-  background-color: white;
+  background-color: #1a1a1a;
 }
 
 .border {
@@ -71,11 +96,11 @@ body {
 }
 
 .border-gray-200 {
-  border-color: #e5e7eb;
+  border-color: #333333;
 }
 
 .bg-gray-50 {
-  background-color: #f9fafb;
+  background-color: #2d2d2d;
 }
 
 .px-6 {
@@ -106,7 +131,7 @@ body {
 }
 
 .text-gray-500 {
-  color: #6b7280;
+  color: #a0a0a0;
 }
 
 .uppercase {
@@ -122,16 +147,14 @@ body {
 }
 
 .divide-gray-200 > * + * {
-  border-color: #e5e7eb;
+  border-color: #333333;
 }
 
 .bg-yellow-50 {
-  background-color: #fffbeb;
+  background-color: #2d2416;
 }
 
-.hover\:bg-gray-50:hover {
-  background-color: #f9fafb;
-}
+/* 중복 제거됨 - 위쪽에 통합된 스타일 사용 */
 
 .whitespace-nowrap {
   white-space: nowrap;
@@ -161,8 +184,12 @@ body {
   font-size: 0.875rem;
 }
 
+.text-base {
+  font-size: 1rem;
+}
+
 .text-gray-900 {
-  color: #111827;
+  color: #ffffff;
 }
 
 .font-semibold {
@@ -213,4 +240,99 @@ body {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+/* 메랜지지 스타일 - 다크 테마 */
+.bg-white {
+  background-color: #2d2d2d !important;
+}
+
+.border-gray-200 {
+  border-color: #404040 !important;
+}
+
+.bg-gray-50 {
+  background-color: #3a3a3a !important;
+}
+
+.text-gray-500 {
+  color: #a1a1a1 !important;
+}
+
+.divide-gray-200 > * + * {
+  border-color: #404040 !important;
+}
+
+/* 중복 제거됨 - 위쪽에 통합된 스타일 사용 */
+
+.text-gray-900 {
+  color: #ffffff !important;
+}
+
+.text-gray-600 {
+  color: #cccccc !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2) !important;
+}
+
+.text-green-600 {
+  color: #4ade80 !important;
+}
+
+.text-yellow-500 {
+  color: #fbbf24 !important;
+}
+
+.text-orange-400 {
+  color: #fb923c !important;
+}
+
+.bg-red-100 {
+  background-color: #3d1a1a !important;
+}
+
+.border-red-400 {
+  border-color: #f87171 !important;
+}
+
+.text-red-700 {
+  color: #fca5a5 !important;
+}
+
+/* 황금색 스타일 추가 */
+.text-gold-500 {
+  background: linear-gradient(45deg, #d97706, #f59e0b, #fbbf24, #fcd34d, #fbbf24, #f59e0b, #d97706);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldShine 3s ease-in-out infinite;
+  font-weight: 700;
+  filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.6));
+}
+
+.text-gold-light {
+  color: #fcd34d !important;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-gold-static {
+  color: #f59e0b !important;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes goldShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

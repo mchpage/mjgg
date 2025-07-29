@@ -4,10 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>마장지지</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+    .main-content {
+      padding-top: 20px;
+    }
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 12px 24px;
+      background-color: rgba(45, 45, 45, 0.75);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #ffffff;
+      margin-bottom: 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid rgba(64, 64, 64, 0.8);
+    }
+    .header-logo {
+      width: 32px;
+      height: 32px;
+      margin-right: 8px;
+      border-radius: 4px;
+    }
+    .header-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0;
+      color: #ffffff;
+      letter-spacing: -0.01em;
+    }
+  </style>
 </head>
 <body>
-  <h1>마장지지</h1>
-  <div id="root">로딩 중...</div>
+  <div class="header">
+    <img src="/favicon.png" alt="마장지지 로고" class="header-logo">
+    <h1 class="header-title">마장지지</h1>
+  </div>
+  <div class="main-content">
+    <div id="root">로딩 중...</div>
+  </div>
   
   <!-- <script>
     console.log('HTML 로드됨');
